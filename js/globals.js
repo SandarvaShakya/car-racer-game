@@ -42,3 +42,8 @@ const carHeight = 100
 const playerX = (canvas.width / 2) - (carWidth / 2)  
 // the constant y position of the player car
 const playerY = canvas.height - (carHeight + carHeight / 2)
+
+let roadLoaded = false
+let finishLineLoaded = false
+let playerLoaded = false
+let enemyLoaded = false

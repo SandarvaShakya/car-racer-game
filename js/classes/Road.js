@@ -19,13 +19,16 @@ class Road extends Particle{
      */
     draw(){
         context.fillStyle = this.color
-        context.drawImage(roadImg,this.x, this.y, this.width, this.height)
-        context.drawImage(roadImg, this.x + this.width, this.y, this.width, this.height)
-        context.drawImage(roadImg, this.x + this.width * 2, this.y, this.width, this.height)
 
-        context.drawImage(roadImg, this.x, this.y - this.height, this.width, this.height)
-        context.drawImage(roadImg, this.x + this.width, this.y - this.height, this.width, this.height)
-        context.drawImage(roadImg, this.x + this.width * 2, this.y - this.height, this.width, this.height)
+        if(roadLoaded){
+            context.drawImage(roadImg,this.x, this.y, this.width, this.height)
+            context.drawImage(roadImg, this.x + this.width, this.y, this.width, this.height)
+            context.drawImage(roadImg, this.x + this.width * 2, this.y, this.width, this.height)
+    
+            context.drawImage(roadImg, this.x, this.y - this.height, this.width, this.height)
+            context.drawImage(roadImg, this.x + this.width, this.y - this.height, this.width, this.height)
+            context.drawImage(roadImg, this.x + this.width * 2, this.y - this.height, this.width, this.height)
+        }
     }
 
     /**

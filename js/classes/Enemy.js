@@ -13,9 +13,9 @@ class EnemyCar extends Particle{
      * displays the enemy car on the screen
      */
     draw(){
-        context.drawImage(enemyImg, this.x, this.y, this.width, this.height)
-        context.fillStyle = 'white'
-        // context.fillText(this.name, this.x, this.y)
+        if(enemyLoaded){
+            context.drawImage(enemyImg, this.x, this.y, this.width, this.height)
+        }
     }
 
     /**

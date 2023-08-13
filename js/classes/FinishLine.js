@@ -19,7 +19,9 @@ class FinishLine extends Particle{
      */
     draw(){
         context.fillStyle = this.color
-        context.drawImage(finishLineImg, this.x, this.y, this.width, this.height)
+        if(finishLineLoaded){
+            context.drawImage(finishLineImg, this.x, this.y, this.width, this.height)
+        }
     }
 
     /**

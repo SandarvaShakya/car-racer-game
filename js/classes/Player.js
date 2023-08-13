@@ -18,9 +18,9 @@ class PlayerCar extends Particle{
      * displays the player car on the screen
      */
     draw(){
-        context.fillStyle = 'red'
-        // context.fillRect(this.x, this.y, this.width, this.height)
-        context.drawImage(playerImg, this.x, this.y, this.width, this.height)
+        if(playerLoaded){
+            context.drawImage(playerImg, this.x, this.y, this.width, this.height)
+        }
     }
 
     /**

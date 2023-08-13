@@ -4,7 +4,7 @@ const cars = document.querySelectorAll('.image-wrapper')
 cars.forEach(car => {
     car.addEventListener('click', (event) => {
         if(sPressCount === 0 || gameOverState === true){
-            playerImg.src = event.target.src
+            playerImg.src = `.${event.target.src}`
         }
     })
 })
