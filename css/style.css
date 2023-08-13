@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f1f1f1;
+}
+
+img{
+    max-width: 100%;
+    display: inline-block;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#canvas{
+    margin-top: 3rem;
+}
+
+.aside{ 
+    width: 400px;
+    position: absolute;
+    padding: 3rem 1rem 1rem 1rem;
+}
+
+.aside--left{
+    top: 0;
+    left: 0;
+}
+
+.aside--right{
+    top: 0;
+    right: 0;
+    text-align: end;
+}
+
+.cars{
+    margin-top: 2rem;
+    justify-content: end;
+    gap: 20px;  
+}
+
+.cars .image-wrapper{
+    width: 50px;
+}
+
+.list{
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    list-style: none;
+}
+
+.list__item{
+    border-bottom: 1px solid gray;
+    padding: 0.55rem;
+}
+
+.list__item:hover{
+    background-color: cornflowerblue;
+    transition: all 0.5s ease-in;
+    cursor: pointer;
+    color: white;
+}
