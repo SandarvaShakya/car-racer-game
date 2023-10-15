@@ -1,52 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
-    <title>Race Game</title>
-</head>
-<body>
-    <div class="container center">
-        <canvas id="canvas"></canvas>
-    </div>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./css/style.css" />
+		<title>Race Game</title>
+	</head>
+	<body>
+		<div class="container center">
+			<canvas id="canvas"></canvas>
+		</div>
 
-    <aside class="aside aside--left">
-        <h2>Instructions</h2>
-        <ul class="list">
-            <li class="list__item">Press 'S' to Start the game</li>
-            <li class="list__item">Press 'R' to Restart the game</li>
-            <li class="list__item">Press Left Arrow key or 'A' to move left</li>
-            <li class="list__item">Press Right Arrow key or 'D' to move right</li>
-            <li class="list__item">Press Up Arrow key or 'W' to move forward faster</li>
-            <li class="list__item">Click on the any of the car on the right to change your car</li>
-        </ul>
-    </aside>
+		<aside class="aside aside--left">
+			<h2>Instructions</h2>
+			<ul class="list">
+				<li class="list__item">Press 'S' to Start the game</li>
+				<li class="list__item">Press 'R' to Restart the game</li>
+				<li class="list__item">Press Left Arrow key or 'A' to move left</li>
+				<li class="list__item">Press Right Arrow key or 'D' to move right</li>
+				<li class="list__item">
+					Press Up Arrow key or 'W' to move forward faster
+				</li>
+				<li class="list__item">
+					Click on the any of the car on the right to change your car
+				</li>
+			</ul>
+		</aside>
 
-    <aside class="aside aside--right">
-        <h2>Choose Your Vehicle</h2>
-        <div class="cars center">
-            <div class="image-wrapper">
-                <img src="./assets/images/car1.png" alt="green car">
-            </div>
-            <div class="image-wrapper">
-                <img src="./assets/images/car2.png" alt="gray car">
-            </div>
-            <div class="image-wrapper">
-                <img src="./assets/images/car3.png" alt="red car">
-            </div>
-        </div>
-    </aside>
+		<aside class="aside aside--right">
+			<h2>Choose Your Vehicle</h2>
+			<div class="cars center">
+				<div class="image-wrapper">
+					<img src="./assets/images/car1.png" alt="green car" />
+				</div>
+				<div class="image-wrapper">
+					<img src="./assets/images/car2.png" alt="gray car" />
+				</div>
+				<div class="image-wrapper">
+					<img src="./assets/images/car3.png" alt="red car" />
+				</div>
+			</div>
+		</aside>
 
-    <script src="./js/globals.js"></script>
-    <script src="./js/sprites.js"></script>
-    <script src="./js/functions.js"></script>
-    <script src="./js/classes/Particle.js"></script>
-    <script src="./js/classes/FinishLine.js"></script>
-    <script src="./js/classes/Road.js"></script>
-    <script src="./js/classes/Enemy.js"></script>
-    <script src="./js/classes/Player.js"></script>
-    <script src="./js/game.js"></script>
-    <script src="./js/app.js"></script>
-</body>
+		<script src="./js/globals.js"></script>
+		<script src="./js/sprites.js"></script>
+		<script src="./js/functions.js"></script>
+		<script src="./js/classes/Particle.js"></script>
+		<script src="./js/classes/FinishLine.js"></script>
+		<script src="./js/classes/Road.js"></script>
+		<script src="./js/classes/Enemy.js"></script>
+		<script src="./js/classes/Player.js"></script>
+		<script src="./js/game.js"></script>
+		<script src="./js/app.js"></script>
+	</body>
 </html>
